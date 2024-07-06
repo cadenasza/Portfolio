@@ -60,9 +60,9 @@ body {
     color: var(--cor-principal);
     border-right: 2px solid; 
     white-space: nowrap;
-    width: 19ch;
+    width: 20ch;
     overflow: hidden;
-    animation: animacaoTexto steps(19) 2.5s, animacaoBorda 0.5s linear;
+    animation: animacaoTexto steps(20) 2.5s, animacaoBorda 0.5s linear;
 } 
 
 .nav-list {
