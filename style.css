@@ -212,6 +212,12 @@ body {
     font-size: 1.5rem;
 }
 
+#section-habilidades {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .habilidade-nome {
     text-align: center;
@@ -231,7 +237,6 @@ body {
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 
