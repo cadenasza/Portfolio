@@ -239,6 +239,9 @@ body {
     flex-wrap: wrap;
 }
 
+.titulos {
+    margin-left: 5rem;
+}
 
 .habilidade {
     display: flex;
@@ -246,6 +249,7 @@ body {
     color: #fff;
     margin-bottom: 1.5rem;
     margin-top: 0.8rem;
+    margin-left: 5rem;
     width: 100%;
 }
 
