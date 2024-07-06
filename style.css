@@ -25,6 +25,13 @@ body {
     min-height: 100vh;
 }
 
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .img {
     width: 12vw;
     height: 22vh;
