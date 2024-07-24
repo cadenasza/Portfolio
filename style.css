@@ -147,11 +147,11 @@ body {
 .projeto {
     max-width: 35%;
     min-height: 40vh;
-    margin: 1rem;
+    /* margin: 1rem; */
     /* border: 1px solid var(--cor-principal); */
     border-radius: 0.5rem;
     box-shadow: 4px 4px 20px 3px rgba(255, 0, 0, 0.2);
-    margin: 0 0 8rem 0;
+    margin: 0 0 3rem 0;
 }
 
 .projeto:hover {
@@ -312,6 +312,28 @@ body {
     font-size: 1.2rem;
     font-weight: 400;
     color: #fff;
+}
+
+.ver-mais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-ver-mais {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 5rem;
+    padding: 1rem 2rem;
+    background-color: #720101;
+    border-radius: 16px;
+    font-family: var(--fonte-alternativa);
+    font-weight: 600;
+}
+
+.link-ver-mais:hover{
+    background-color: transparent;
+    border: 2px solid #720101;
 }
 
 @media screen and (max-width:900px) {
