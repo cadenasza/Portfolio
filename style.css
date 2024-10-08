@@ -159,17 +159,18 @@ body {
 
 .projeto:hover {
     transform: scale(1.1);
+    transition: .5s;
 }
 
 .projeto h3 {
     margin: 2rem 0;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color:#fff;
 }
 
 .texto-projeto {
     margin: 3rem 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #fff;
     font-family: var(--fonte-alternativa);
     font-weight: 500;
