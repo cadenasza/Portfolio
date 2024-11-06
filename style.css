@@ -123,7 +123,7 @@ body {
 
 .link:hover {
     color: #fff;
-    transition: 1s;
+    transition: .5s;
 }
 
 .container-projetos {
@@ -226,6 +226,7 @@ body {
 }
 
 .titulo-habilidade{
+    margin-top: 5rem;
     font-size: 2.5rem;
     color: #e70000;
 }
@@ -250,17 +251,36 @@ body {
     height: 17vh;
     border-radius: 0.5rem;
     box-shadow: #720101 0px 5px 18px;
-    gap: 10px;
 }
 
-.img-habilidade{
+.img-habilidade-java{
+    width: 6rem;
+}
+.img-habilidade-js{
+    width: 4rem;
+    margin-top: 20px;
+}
+
+.img-habilidade {
     width: 5rem;
-    
+    margin-top: 20px;
+}
+
+.card-habilidade:hover{
+    transform: scale(1.1);
+    transition: .4s;
+    opacity: .6;
 }
 
 .texto-habilidade{
     color: #fff;
     font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.texto-habilidade-js{
+    margin-top: 1.7rem;
+    color: #fff;
+    font-size:1.5rem ;
 }
 
 .rodape {
