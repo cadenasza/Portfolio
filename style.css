@@ -85,6 +85,10 @@ body {
     opacity: 0.6;
 }
 
+.icone-whats{
+    width: 1.8rem;
+}
+
 .icones:hover {
     opacity: 1;
     transition: 0.4s;
