@@ -287,6 +287,94 @@ body {
     font-size:1.5rem ;
 }
 
+.section-contato{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 0;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contato {
+    color: var(--cor-principal);
+    font-size: 2.5rem;
+    padding: 2rem 0;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    box-shadow: #720101 0px 5px 18px;
+    width: 20vw;
+    height: 60vh;
+    border-radius: 16px;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 0;
+}
+
+.label-form, .label-mensagem{
+    font-size: 1.6rem;
+    padding: .3rem 0;
+    color: var(--cor-principal);
+}
+
+.input-contato{
+    padding: 1.1rem;
+    width: 15vw;
+    border-radius: 4px;
+    border: 1px solid var(--cor-principal);
+    background-color: #000;
+    border: none;
+    border-bottom: 1px solid var(--cor-principal);
+    border-left: 1px solid var(--cor-principal);
+    color: #fff;
+}
+
+.label-mensagem {
+    text-align: center;
+}
+.input-contato::placeholder{
+    color: #fff;
+}
+
+#mensagem {
+    padding: 1rem;
+    height: 5rem;
+    width: 17rem;
+    resize: none;
+    border: 1px solid var(--cor-principal);
+    border-radius: 6px;
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-div{
+    margin-top: 1rem;
+}
+.btn{
+    background-color: var(--cor-principal);
+    padding: .5rem 2rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--fonte-secundaria);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: var(--cor-principal);
+}
+
 .rodape {
     margin-top: 8rem;
 }

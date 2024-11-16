@@ -226,11 +226,72 @@
         </div>
       </div>
     </section>
+    <section class="section-contato">
+     <form action="formulario-contact" method="post" class="formulario" id="formulario-contact">
+      <h2 class="contato">Contato</h2>
+      <div class="form-input">
+        <label for="nome" class="label-form">Nome</label>
+        <input id="nome" type="text" name="nome" placeholder="Digite seu nome:" class="input-contato" required>
+      </div>
+
+      <div class="form-input">
+        <label for="email" class="label-form">Email</label>
+        <input id="email" type="email" name="email" placeholder="Digite seu email:" class="input-contato" required>
+      </div>
+
+      <div class="form-input">
+        <label for="mensagem" class="label-mensagem">Sua Mensagem</label>
+        <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem:" required></textarea>
+      </div>
+      <div class="btn-div">
+        <button type="submit" class="btn">Enviar</button>
+      </div>
+     </form>
+    </section>
     <footer class="rodape">
       <div class="rodape-container">
         <p>©️ Feito por Leonardo Cadena de Souza</p>
       </div>
     </footer>
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script>
+      
+      (function() {
+        emailjs.init("DoKlpEZHKlyaMdftr"); 
+      })();
+  
+      const form = document.getElementById("formulario-contact");
+  
+      form.addEventListener("submit", function(event) {
+        event.preventDefault();
+  
+        const name = document.getElementById("nome").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("mensagem").value;
+  
+        
+        const templateParams = {
+          from_name: name,
+          from_email: email,
+          message: message
+        };
+  
+        emailjs
+          .send("service_mb8v89j", "template_ec2zcpl", templateParams)
+          .then(
+            (response) => {
+              alert("E-mail enviado com sucesso!");
+              form.reset();
+            },
+            (error) => {
+              alert("Erro ao enviar e-mail: " + error.text);
+            }
+          );
+      });
+    </script>
   </body>
 </html>
 
