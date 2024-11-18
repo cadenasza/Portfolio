@@ -167,13 +167,13 @@ body {
 }
 
 .projeto h3 {
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     font-size: 2rem;
     color:#fff;
 }
 
 .texto-projeto {
-    margin: 3rem 1rem;
+    margin: 2.5rem 1rem;
     font-size: 1.4rem;
     color: #fff;
     font-family: var(--fonte-alternativa);
@@ -219,7 +219,7 @@ body {
     width: 50%;
     color: #fff;
     margin: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 #section-habilidades {
@@ -252,21 +252,21 @@ body {
     align-items: center;
     justify-content: center;
     width: 12vw;
-    height: 17vh;
+    min-height: 17vh;
     border-radius: 0.5rem;
     box-shadow: #720101 0px 5px 18px;
 }
 
 .img-habilidade-java{
-    width: 6rem;
+    max-width: 6rem;
 }
 .img-habilidade-js{
-    width: 4rem;
+    max-width: 4rem;
     margin-top: 20px;
 }
 
 .img-habilidade {
-    width: 5rem;
+    max-width: 5rem;
     margin-top: 20px;
 }
 
@@ -306,8 +306,8 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: #720101 0px 5px 18px;
-    width: 20vw;
-    height: 60vh;
+    width: 30vw;
+    min-height: 70vh;
     border-radius: 16px;
     align-items: center;
     gap: 15px;
@@ -327,7 +327,7 @@ body {
 
 .input-contato{
     padding: 1.1rem;
-    width: 15vw;
+    width: 20vw;
     border-radius: 4px;
     border: 1px solid var(--cor-principal);
     background-color: #000;
@@ -346,8 +346,8 @@ body {
 
 #mensagem {
     padding: 1rem;
-    height: 5rem;
-    width: 17rem;
+    height: 8rem;
+    width: 20rem;
     resize: none;
     border: 1px solid var(--cor-principal);
     border-radius: 6px;
@@ -360,7 +360,7 @@ body {
 }
 .btn{
     background-color: var(--cor-principal);
-    padding: .5rem 2rem;
+    padding: .9rem 2.2rem;
     border-radius: 8px;
     border: none;
     font-size: 1.5rem;
@@ -417,8 +417,135 @@ body {
     border: 2px solid #720101;
 }
 
-@media screen and (max-width:900px) {
-    .img {
+
+@media screen and (max-width:1400px) {
+    .formulario{
+        width: 45vw;
+    }
+    .input-contato{
         width: 30vw;
+    }
+    .btn-div{
+        margin: 1rem 0;
+    }
+    .sobre-mim-texto{
+        width: 75%;
+    }
+    .card-habilidade{
+        width: 25%;
+        height: 20vh;
+    }
+    .texto-habilidade{
+        margin-top: .5rem;
+    }
+    .texto-habilidade-js{
+        margin-top: .8em;
+    }
+    .img-habilidade{
+        margin-top: 0;
+        max-width: 8rem;
+    }
+    .img-habilidade-js{
+        margin-top: .8rem;
+        max-width:9rem ;
+    }
+    .img-habilidade-java{
+        margin-top: .5rem;
+        max-width: 9rem;
+    }
+}
+
+
+@media screen and (max-width:990px) {
+    .formulario{
+        width: 55vw;
+    }
+    .input-contato{
+        width: 40vw;
+    }
+    .btn-div{
+        margin: 1rem 0;
+    }
+    .sobre-mim-texto{
+        width: 75%;
+    }
+    .card-habilidade{
+        width: 35%;
+    }
+    .projeto{
+        max-width: 80%;
+        min-height: 50vh;
+    }
+    .img {
+        width: 20vw;
+    }
+}
+
+
+@media screen and (max-width:610px) {
+    .card-habilidade{
+        width: 35%;
+    }
+    .formulario{
+        width: 75vw;
+    }
+    .input-contato{
+        width: 55vw;
+    }
+    .sobre-mim-texto{
+       font-size: 1.4rem;
+    }
+    .img{
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .texto-habilidade{
+        font-size: 1.3rem;
+    }
+    .formulario{
+        width: 95vw;
+    }
+    .input-contato{
+        width: 75vw;
+    }
+    .sobre-mim-texto{
+       font-size: 1.4rem;
+    }
+    .img{
+        width: 40vw;
+    }
+    .texto-projeto{
+        font-size: 1.3rem;
+    }
+    .projeto{
+        max-width: 90%;
+        min-height: 50vh;
+    }
+    .projeto h3{
+        font-size: 1.5rem;
+    }
+    .card-habilidade{
+        width: 55%;
+        height: 23vh;
+    }
+    .texto-habilidade{
+        margin-top: .5rem;
+    }
+    .texto-habilidade-js{
+        margin-top: .8em;
+    }
+    .img-habilidade{
+        margin-top: 0;
+        max-width: 8rem;
+    }
+    .img-habilidade-js{
+        margin-top: .8rem;
+        max-width:7rem ;
+    }
+    .img-habilidade-java{
+        margin-top: .5rem;
+        max-width: 9rem;
     }
 }
